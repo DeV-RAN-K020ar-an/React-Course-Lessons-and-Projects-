@@ -1,0 +1,31 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.bg-red {
+    background-color: rgb(255, 122, 122);
+}
+
+
+.bg-green {
+    background-color: lightgreen;
+}
+
+.rounded-1 {
+    border-radius: 1rem;
+}

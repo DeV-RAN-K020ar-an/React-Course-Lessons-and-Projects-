@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 45, 109);
+}
+
+.box {
+    height: 50%;
+    width: 40%;
+    background-color: rgb(73, 90, 241);
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box > .count {
+    border: 1px solid rgb(46, 48, 92);
+    color: white;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    height: 100px;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box > .btn {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.box > section > button {
+    border: none;
+    border-radius: 0.7rem;
+    background-color: rgb(135, 201, 255);
+    width: 5rem;
+    font-size: 1.3rem;
+    height: 2.5rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.box > section > button:hover {
+    background-color: rgb(61, 113, 174);
+    cursor: pointer;
+    scale: 1.1;
+}

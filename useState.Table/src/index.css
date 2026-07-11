@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('/public/font/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    min-height: 100vh;
+    padding: 0.8rem;
+    background-color: #131A2A;
+}
+
+table {
+    font-family: 'MyFont';
+    width: 100%;
+    color: #2A3348;
+    border-radius: 0.7rem;
+    color: #5E667A;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #2A3348;
+    color: #E7EAF0;
+}
+
+thead>tr {
+    border-radius: 1rem;
+    height: 3rem;
+}
+
+tr>th {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: #2A3348;
+}
+
+tbody tr {
+    text-align: center;
+    height: 2.8rem;
+    width: 100%;
+    background-color: #C8FF47;
+    /* border-bottom: 1px solid #5E667A; */
+}
+
+td>button>img:hover {
+    scale: 0.9;
+    background-color: #131A2A;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.addItem {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 0.3rem;
+}
+
+.addItem>section>button {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    height: 2.2rem;
+    background-color: #2A3348;
+    border-radius: 0.4rem;
+    transition: 0.4s;
+    border: none;
+    color: #5E667A;
+}
+
+.addItem>section>button:hover {
+    color: rgba(255, 255, 255, 0.82);
+    cursor: pointer;
+    background-color: #5E667A;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.modal {
+    width: 800px;
+    height: 425px;
+    position: absolute;
+    top: 10rem;
+    right: 23rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.331);
+    gap: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    color: #8B93A7;
+    padding: 0.8rem;
+    background-color: #2A3348;
+    font-family: 'MyFont';
+}
+
+.modal>.header {
+    width: 100%;
+    height: 10%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header>button {
+    background-color: rgba(0, 0, 0, 0);
+    height: 2rem;
+    border: none;
+    width: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>button>img {
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.4s;
+    padding: 0.2rem;
+}
+
+.header>button>img:hover {
+    background-color: #131A2A;
+    cursor: pointer;
+}
+
+td>button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.input-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.input-section>div {
+    background-color: #8B93A7;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    border: 0.01px solid #2A3348;
+    width: 100%;
+    height: 2.4rem;
+    display: flex;
+    gap: 0.3rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.input-section>div>input {
+    padding: 0.3rem;
+    width: 80%;
+    height: 100%;
+    background-color: #8B93A7;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    font-family: 'MyFont';
+}
+
+.input-section>div>label {
+    background-color: black;
+    height: 100%;
+    width: 20%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MyFont';
+}
+
+.add-item {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-item > button {
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    background-color: black;
+    border-radius: 0.3rem;
+    color: #8B93A7;
+    transition: 0.4s;
+    font-size: 1rem;
+}
+
+section > button:hover {
+    background-color: #5E667A;
+    cursor: pointer;
+}

@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+td,th {
+    text-align: center;
+}

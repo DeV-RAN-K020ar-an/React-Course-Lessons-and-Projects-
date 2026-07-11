@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(17, 27, 53);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-wrapper {
+    width: 32%;
+    padding: 0.5rem;
+    height: 100vh;
+    overflow: auto;
+}
+
+.post {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30rem;
+    width: 100%;
+    background-color: rgb(46, 113, 229);
+    border-bottom: 1px solid rgb(17, 27, 53);
+}
+
+.post-header {
+    height: 13%;
+    display: flex;
+    justify-content: start;
+    padding-left: 1rem;
+    align-items: center;
+    background-color: white;
+    gap: 1rem;
+}
+
+.post-header-image > img {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-body {
+    height: 65%;
+}
+
+.post-body > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-buttons {
+    height: 10%;
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.post-buttons > button {
+    padding: 0.2rem;
+    width: 2.3rem;
+    border: none;
+    font-size: 1rem;
+    height: 2.2rem;
+    border-radius: 0.6rem;
+    background-color: rgba(79, 199, 255, 0.895);
+}
+
+.post-buttons > button:hover {
+    background-color: rgb(138, 185, 255);
+    cursor: pointer;
+}
+
+.post-caption {
+    color: white;
+    height: 10%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
