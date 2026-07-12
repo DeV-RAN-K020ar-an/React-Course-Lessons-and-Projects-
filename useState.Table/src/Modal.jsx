@@ -66,7 +66,6 @@ const Modal = ({ setModal, setItems }) => {
       <section style={{
         height: '5%',
       }}>
-        <p style={{color: 'red'}}>You Should Complete The Form! If You don't Complete The Form, You Will Take An Error.</p>
       </section>
       <section className="add-item">
         <button onClick={handleSubmit}>Add</button>

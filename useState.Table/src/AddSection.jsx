@@ -1,14 +1,10 @@
 import { useState } from "react"
-import Modal from "./Modal"
-
-const AddSection = ({ setItems }) => {
-  const [modal, setModal] = useState(false)
+const AddSection = ({ setItems, setModal }) => {
   const handleChange = () => {
     setModal(!false)
   }
   return (
     <div className="addItem">
-      {modal && <Modal setModal={setModal} setItems={setItems} />}
       <section>
         <button onClick={handleChange}>+ Add Item</button>
       </section>

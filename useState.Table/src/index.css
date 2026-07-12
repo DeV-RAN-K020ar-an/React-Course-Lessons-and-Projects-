@@ -219,7 +219,10 @@ td>button {
     border-radius: 0.3rem;
     color: #8B93A7;
     transition: 0.4s;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section>button:hover {
