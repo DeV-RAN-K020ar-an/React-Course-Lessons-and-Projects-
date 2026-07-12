@@ -21,7 +21,6 @@ main {
 table {
     font-family: 'MyFont';
     width: 100%;
-    color: #2A3348;
     border-radius: 0.7rem;
     color: #5E667A;
     overflow: hidden;
@@ -55,12 +54,27 @@ tbody tr {
     /* border-bottom: 1px solid #5E667A; */
 }
 
-td>button>img:hover {
-    scale: 0.9;
-    background-color: #131A2A;
-    border-radius: 0.5rem;
-    padding: 0.4rem;
+td>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+td>div>button {
+    border: none;
+    background-color: transparent;
+}
+
+td>div>button>img {
+    transition: 0.5s;
+    padding: 0.3rem;
+}
+
+td>div>button>img:hover {
+    background-color: #8B93A7;
     cursor: pointer;
+    border-radius: 0.2rem;
 }
 
 .addItem {
@@ -197,7 +211,7 @@ td>button {
     align-items: center;
 }
 
-.add-item > button {
+.add-item>button {
     width: 8rem;
     height: 2rem;
     border: none;
@@ -208,7 +222,7 @@ td>button {
     font-size: 1rem;
 }
 
-section > button:hover {
+section>button:hover {
     background-color: #5E667A;
     cursor: pointer;
 }

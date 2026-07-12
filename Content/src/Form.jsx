@@ -34,7 +34,8 @@ const Form = ({ setStudents }) => {
                 <label className="w-1/5 text-blue-200">Age</label>
                 <input className="w-4/5 outline-none text-white placeholder:text-blue-100"
                     placeholder="Enter Your Age"
-                    type="age" name="age"
+                    type="age" 
+                    name="age"
                     value={form.age}
                     onChange={handleChange} />
             </div>

@@ -25,7 +25,12 @@ const Table = ({ items, setItems }) => {
                             <td>{item.cost}</td>
                             <td>{item.cost * item.quantity}</td>
                             <td>{item.date}</td>
-                            <td><button onClick={() => handleDelete(i)}><img src="/trash-2.svg" /></button></td>
+                            <td>
+                                <div>
+                                    <button onClick={() => handleDelete(i)}><img src="/trash-2.svg" /></button>
+                                    <button><img src="/clipboard-pen.svg" /></button>
+                                </div>
+                            </td>
                         </tr>
                     )
                 })}

@@ -5,7 +5,6 @@ const Modal = ({ setModal, setItems }) => {
   const handleClose = () => {
     setModal(false)
   }
-
   const emptyOBJ = {
     id: '',
     item: '',
@@ -20,7 +19,7 @@ const Modal = ({ setModal, setItems }) => {
   }
 
   const handleSubmit = () => {
-    if (form.id || form.item != '') {
+    if (form.id != '' || form.item != '') {
       setTimeout(() => {
         setItems((prevState) => {
           return [...prevState, form]
@@ -67,7 +66,7 @@ const Modal = ({ setModal, setItems }) => {
       <section style={{
         height: '5%',
       }}>
-        <p style={{ color: 'red' }}></p>
+        <p style={{color: 'red'}}>You Should Complete The Form! If You don't Complete The Form, You Will Take An Error.</p>
       </section>
       <section className="add-item">
         <button onClick={handleSubmit}>Add</button>
