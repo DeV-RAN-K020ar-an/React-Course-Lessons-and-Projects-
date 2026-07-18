@@ -28,7 +28,7 @@ const Table = ({ items, setItems }) => {
                             <td>
                                 <div>
                                     <button onClick={() => handleDelete(i)}><img src="/trash-2.svg" /></button>
-                                    <button><img src="/clipboard-pen.svg" /></button>
+                                    <button onClick={() => handleDelete(i)}><img src="/clipboard-pen.svg" /></button>
                                 </div>
                             </td>
                         </tr>

@@ -1,25 +1,8 @@
 import { BiSearch } from "react-icons/bi"
 import MovieCard from "./MovieCard"
+import movies from "../shared/data"
 
 const Home = () => {
-  const movies = [
-    {
-      id: 1,
-      label: 'Lord of the Rings',
-      image: '/images/5.jpg',
-      rate: 8.9,
-      description: 'Lorem ipsum dolor sit amet.',
-      geners: 'Action, Fantasy'
-    },
-    {
-      id: 2,
-      label: 'Mission Impossible',
-      image: '/images/3.jpg',
-      rate: 7.0,
-      description: 'Verry Action Movie.',
-      geners: 'Action, Drama'
-    }
-  ]
   return (
     <main className="h-screen flex flex-col p-10 gap-4" style={{
       backgroundImage: 'url(/images/1.jpg)',
